@@ -1,21 +1,47 @@
-*{
-    background-color: lightgrey; 
+body,html {
+    height: 100%;
+    width: 100%;  
+    margin: 0; 
 }
 
+.navbar {
+    background: black; 
+}
 .navbar-brand {
-    color:black; 
+    color:white;
 }
-
+ 
 .navbar-brand:hover {
-    color:black; 
+    color:white; 
 }
-
+ 
 .navbar-nav a {
-    color: black; 
+    color:white; 
 }
-
+ 
 .navbar-nav a:hover {
     color:grey; 
+}
+
+#cover-page {
+    background-image: url('images/android_bg.jpg'); 
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover; 
+    width: 100%; 
+    height: 100%; 
+}
+
+#cover-title {
+    text-align: center; 
+    padding: 300px;
+    font-size: 50px; 
+    color: white; 
+}
+
+#about-me {
+    background-color: red; 
+    min-height: 800px;
 }
 
 #content {
