@@ -39,9 +39,17 @@ body,html {
     color: white; 
 }
 
-#about-me {
-    background-color: red; 
-    min-height: 800px;
+#about-me { 
+    height: 800px;
+    color: #3369e8; 
+}
+
+.carousel.slide {
+    position: absolute;
+    width: 500px;
+    height: 500px; 
+    margin-left: 25px;  
+    margin-top: 150px;
 }
 
 #content {
