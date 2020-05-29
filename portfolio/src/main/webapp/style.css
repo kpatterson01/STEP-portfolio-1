@@ -25,7 +25,6 @@ body,html {
 
 #cover-page {
     background-image: url('images/android_bg.jpg'); 
-    background-repeat: no-repeat;
     background-attachment: fixed;  
     background-size: cover; 
     width: 100%; 
@@ -41,12 +40,13 @@ body,html {
 
 .about-title {
     color:#3369e8; 
+    margin-top: 50px; 
     margin-left: 350px;  
     margin-right: auto; 
+    
 }
 
-.about-text { 
-    color: #3369e8;  
+.about-text {  
     margin-left: 300px;
     margin-right: 300px;  
     text-align: center; 
@@ -67,8 +67,22 @@ body,html {
 }
 
 #projects {
-    height: 400px; 
+    height: 200%; 
     background-color: #ebeef2; 
+}
+
+.project-layout {
+    display: grid; 
+    grid-gap: 100px; 
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2rem; 
+}
+
+#proj-title {
+    color: #d50f25; 
+    margin-top: 50px; 
+    margin-left: 300px;
+    margin-right: 300px;  
 }
 
 #content {
