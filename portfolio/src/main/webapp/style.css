@@ -39,19 +39,35 @@ body,html {
     color: white; 
 }
 
-#about-me { 
-    height: 800px;
-    color: #3369e8; 
+.about-title {
+    color:#3369e8; 
+    margin-left: 350px;  
+    margin-right: auto; 
+}
+.about-text { 
+    color: #3369e8;  
+    margin-left: 300px;
+    margin-right: 300px;  
+}
+
+#about-carousel { 
+    height: 600px; 
 }
 
 .carousel.slide {
-    position: absolute;
-    width: 500px;
-    height: 500px; 
-    margin-left: 25px;  
-    margin-top: 150px;
+    position: relative;
+    width: 600px;
+    height: 600px; 
+    margin-left: auto; 
+    margin-right: auto; 
+    margin-top: 50px;
+    margin-bottom: -200px; 
 }
 
+#projects {
+    height: 400px; 
+    background-color: #ebeef2; 
+}
 #content {
   margin-left: auto;
   margin-right: auto;
