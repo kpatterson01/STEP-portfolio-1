@@ -15,7 +15,7 @@
 /**
  * Adds a random greeting to the page.
  */
-function addRandomGreeting() {
+function addRandomFact() {
   const aboutMe =
       ['I have lived in NJ my entire life', 
       'My favorite dessert is Cheesecake', 
