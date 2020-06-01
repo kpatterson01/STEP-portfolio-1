@@ -29,6 +29,8 @@ body,html {
     background-size: cover; 
     width: 100%; 
     height: 100%; 
+    /*filter: blur(8px);
+    transform: scale(1.1); */
 }
 
 #cover-title {
@@ -66,6 +68,13 @@ body,html {
     margin-bottom: -200px; 
 }
 
+@media screen and (max-width: 500px) {
+  .carousel.slide {
+    width: 250px; 
+    height: 250px; 
+  }
+}
+
 #about-btn {
     text-align: center;
 }
@@ -75,8 +84,14 @@ body,html {
     text-align: center; 
 }
 
+#proj-title {
+    color: #d50f25; 
+    margin-top: 50px; 
+    margin-left: 350px;  
+    margin-right: auto;  
+}
+
 #projects {
-    height: 1350px; 
     background-color: #ebeef2; 
 }
 
@@ -87,11 +102,52 @@ body,html {
     padding: 2rem; 
 }
 
-#proj-title {
-    color: #d50f25; 
+@media screen and (max-width: 500px) {
+  .project-layout {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+#int-title {
+    color: #009925; 
     margin-top: 50px; 
+    margin-left: 350px;  
+    margin-right: auto; 
+}
+
+.column {
+  float: center;
+  width: 33.33%;
+  padding: 5px; 
+  text-align: center;
+  column-gap: 30px;  
+}
+
+.row {
     margin-left: 300px;
-    margin-right: 300px;  
+    margin-right: 200px;  
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+  margin-left: 20px; 
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+  .row {
+    width: 100%; 
+    margin-left: auto; 
+    margin-right: auto; 
+  }
+  #int-title {
+    margin-left: auto;  
+    margin-right: auto; 
+  }
 }
 
 footer {
