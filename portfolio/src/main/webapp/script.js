@@ -12,20 +12,34 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+
+/**
+ * Changes color of cover title using random method 
+ */
+document.getElementById("changeColor").addEventListener("mouseover", isColor);
+document.getElementById("changeColor").addEventListener("mouseout", isColor);
+
+function isColor() {
+    const color =
+        ['#3369e8', '#eeb211', '#009925', '#d50f25']; 
+    const randColor = color[Math.floor(Math.random() * color.length)]; 
+    document.getElementById("changeColor").style.color = randColor; 
+} 
+
 /**
  * Adds a random greeting to the page.
  */
 function addRandomFact() {
-  const aboutMe =
-      ['I have lived in NJ my entire life', 
-      'My favorite dessert is Cheesecake', 
-      'I am a Virgo', 
-      'I had a pet guinea pig named Lightening'];
+    const aboutMe =
+        ['I have lived in NJ my entire life', 
+        'My favorite dessert is Cheesecake', 
+        'I am a Virgo', 
+        'I had a pet guinea pig named Lightening'];
 
-  // Pick a random greeting.
-  const moreText = aboutMe[Math.floor(Math.random() * aboutMe.length)];
+    // Pick a random greeting.
+    const moreText = aboutMe[Math.floor(Math.random() * aboutMe.length)];
 
-  // Add it to the page.
-  const moreContainer = document.getElementById('more-container');
-  moreContainer.innerText = moreText;
+    // Add it to the page.
+    const moreContainer = document.getElementById('more-container');
+    moreContainer.innerText = moreText;
 }
